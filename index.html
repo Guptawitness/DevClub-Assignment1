@@ -1,0 +1,191 @@
+<html>
+     
+<head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <title></title>
+    <link href='styles.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<script>
+    function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+</head>
+
+<body>
+    <div id='header'>
+        <div id='nav'>
+        <ul id='navbar'>
+            <li class='navbarlist' id='a'>Home</li>
+            <a href='#symptoms'> <li class='navbarlist' id='b'>Symptoms</li></a>
+            <a href='#tips'><li class='navbarlist' id='c'>Tips</li></a>
+            <a href='#faqs'><li class='navbarlist'id='d'>FAQs</li></a>
+            <a href='#youtube'><li class='navbarlist'id='e'>Youtube</li></a>
+        </ul>
+        </div>
+        <script>
+            const colors = ["#98C4DC", "#A0D2EC", "#F9C3C5", "#C7ADD3", "#AFC7D8", '#F1EADA', '#F9F4D9', '#F5C0C4'];
+
+            const numBalls = 50;
+            const balls = [];
+
+            for (let i = 0; i < numBalls; i++) {
+                let ball = document.createElement("div");
+                ball.classList.add("ball");
+                ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+                ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+                ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+                ball.style.transform = `scale(${Math.random()})`;
+                ball.style.width = `${Math.random()}em`;
+                ball.style.height = ball.style.width;
+
+                balls.push(ball);
+                document.body.append(ball);
+            }
+
+            // Keyframes
+            balls.forEach((el, i, ra) => {
+                let to = {
+                    x: Math.random() * (i % 2 === 0 ? -11 : 11),
+                    y: Math.random() * 12
+                };
+
+                let anim = el.animate(
+                    [{
+                        transform: "translate(0, 0)"
+                    }, {
+                        transform: `translate(${to.x}rem, ${to.y}rem)`
+                    }], {
+                        duration: (Math.random() + 1) * 2000, // random duration
+                        direction: "alternate",
+                        fill: "both",
+                        iterations: Infinity,
+                        easing: "ease-in-out"
+                    }
+                );
+            });
+        </script>
+        <div id='quote'>
+        <h2 class='title' ><span style='color:#bd90d1'>Why </span>to colourless our lives due to <span id="covid">covid</span>,</h2>
+        
+        <h1 class='title' id='title1' >make it as <span id="vivid">vivid</span> as it could be</h1>
+        <h2 class='title' >with some <span id="steps">steps</span> </h2>
+        </div>
+    </div>
+
+    <div id='tips'>
+       <div style='background-color: #c089da; width:10%;border-radius: 25px; margin-left:40%;'><h2 style='text-align: center; ' ><a name='tips'>TIPS</a></h2></div> 
+        <div class="tip-box">
+            <img src='https://image.freepik.com/free-vector/cartoon-cute-coronavirus-covid-19-woman-working-home_39961-1854.jpg'>
+            <h3>Stay at home</h3>
+            <h4>Go out whenever it is very very important.</h4>
+
+        </div>
+        <div class="tip-box">
+            <img src='https://image.freepik.com/free-vector/cartoon-cute-coronavirus-covid-19-woman-cat-save-safe_39961-1922.jpg'>
+            <h3>Wear mask.</h3>
+            <h4>Please remeber to wear mask.</h4>
+        </div>
+        <div class="tip-box">
+            <img src='https://image.freepik.com/free-vector/cartoon-cute-coronavirus-covid-19-doctor-patient_39961-1902.jpg'>
+            
+            <h3>Take test.</h3>
+            <h4>Whenever you see symptoms of covid take a test.</h4>
+        </div>
+        <div class="tip-box">
+            <img src='https://image.freepik.com/free-vector/cartoon-cute-coronavirus-covid-19-social-distancing_39961-1911.jpg'>
+            <h3>Social Distancing.</h3>
+            <h4>Follow social distancing at public places.</h4>
+        </div>
+        <div class="tip-box">
+            <img src='https://img.freepik.com/free-vector/cartoon-cute-coronavirus-covid-19-woman-wearing-mask_39961-1907.jpg?size=626&ext=jpg'>
+            <h3>Don't touch your mask.</h3>
+            <h4>Touching the mask can be the way of calling covid.</h4>
+        </div>
+    </div>
+    
+        <div style='background-color: rgb(195, 227, 255) ; width:12%;border-radius: 25px; margin-left:39%;'> <h2 style='text-align: center;'><a name='symptoms'>SYMPTOMS</a></h2></div>
+        <div id='symptoms'>
+        <table>
+            <tr>
+                <th id="hor-heading" style='background-color:#f0f0f0e7;'>Symptom</th>
+                <th id="hor-heading" style='background-color:#fff;'>Severity</th>
+                <th id="hor-heading" style='background-color:#f0f0f0e7;'>Advice</th>
+                
+            </tr>
+            <tr>
+                <th id="ver-heading" style='background-color:#fff;'>Fever</th>
+                <td class='mild' style='background-color:#f0f0f0e7;'>Mild</td>
+                <td class='advice' style='background-color:#fff;'>Drink plenty of fluid, particularly water.</td>
+                
+            </tr>
+            <tr>
+                <th id="ver-heading" style='background-color:#f0f0f0e7;'>Cold</th>
+                <td class='severe'style='background-color:#fff;'>Severe</td>
+                <td class='advice' style='background-color: #f0f0f0e7;'>Drink plenty of fluid, particularly water.</td>
+                
+            </tr>
+           
+            <tr>
+                <th id="ver-heading" style='background-color:#fff;'>Cough</th>
+                <td style='background-color:#f0f0f0e7;' >Mild</td>
+                <td class='advice' style='background-color:#fff;'>Drink plenty of fluid, particularly water.</td>
+                
+            </tr>
+            <tr>
+                <th id="ver-heading" style='background-color:#f0f0f0e7;'> Tiredness</th>
+                <td class='severe' style='background-color:#fff;'>Severe</td>
+                <td class='advice' style='background-color:#f0f0f0e7;'>Drink plenty of fluid, particularly water.</td>
+                
+            </tr>
+                
+
+        </table>
+    </div>
+    
+       <div style='background-color: rgb(186, 255, 177); width:10%;border-radius: 25px; margin-left:40%;margin-bottom:20px;'><h2 class='heading' style='text-align: center; '><a name='faqs'>FAQS</a></h2></div>
+     <div id="FAQS">
+        <div class='faqs' style=' box-shadow: 1px 1px 1px 1px rgb(195, 227, 255) ;float:left;'>
+            <h3 class='faqsques'>What is Covid?</h3>
+            <p class='faqsans'>Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The first known case was identified in Wuhan, China, in December 2019. The disease has since spread worldwide,
+                leading to an ongoing pandemic.</p>
+            <a href='https://en.wikipedia.org/wiki/COVID-19'><button type="submit" class="know-more"style='background:rgb(164, 213, 255);' >Know More</button></a>
+        </div>
+        <div class='faqs'style=' box-shadow: 1px 1px 1px 1px #c089da ; float:left;'>
+            <h3 class='faqsques'>What are the symptoms and complications taht COVID 19 can cause?</h3>
+            <p class='faqsans'>If you have COVID-19, the illness that comes from infection with the recently discovered coronavirus, your symptoms may be relatively mild and manageable at home. That’s true for most people. But if you’re older or have another illness such
+                as diabetes or heart disease, you’re more at risk for the serious form of COVID-19.</p>
+            <a href='https://www.webmd.com/lung/coronavirus-complications#1'><button type="submit" class="know-more" style='background:#c089da;'>Know More</button></a>
+        </div>
+        <div class='faqs'style='box-shadow: 1px 1px 1px 1px #ff7075;float:left;'>
+            <h3 class='faqsques'>How often should i use Hand-Sanitiser and Soap?</h3>
+            <p class='faqsans'>Use hand sanitizer periodically throughout the day. Certain activities or settings can pose more of a risk for the spread of infections or illnesses if you have come into contact with animals, people, or food.</p>
+            <a href='https://www.wikihow.com/Use-Hand-Sanitizer'><button type="button" class="know-more" style='background:#ff7075;'>Know More</button></a>
+        </div>
+    </div>
+    <div id='youtube'>
+       <div style='background-color: #ff7075; width:10%;border-radius: 25px; margin-left:40%;'><h2 style='text-align: center; '><a name='youtube'>YOUTUBE</a></h2></div>
+        <div id=vdo><iframe width="560" height="315" src="https://www.youtube.com/embed/qHksVwOrpbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+    <div id='footer'>
+        
+        <p ><span id='name'>Sakshi Gupta</span><br>
+        <a href="#" class="fa fa-"></a>6376211951<br>
+        <a href="https://www.instagram.com/sakshigupta_15/" class="fa fa-instagram"></a>sakshigupta_15<br>
+        <a href="#" class="fa fa-envelope-o"></a>003sakshigupta@gmail.com</p>
+        
+        
+    </div>
+</body>
+
+</html>

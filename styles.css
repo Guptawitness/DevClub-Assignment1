@@ -1,0 +1,217 @@
+
+body {
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    
+   
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+img:hover {
+    opacity: 0.8;
+}
+#header{
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+    
+    background-position-y:bottom;
+    
+    background-image:url('https://img.freepik.com/free-vector/cartoon-cute-coronavirus-covid-19-staff-hospital-happy_39961-1939.jpg?size=626&ext=jpg') ;
+    
+}
+
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+}
+#nav{
+    margin-top:0.5%;
+    
+    
+    display:block;
+    transition: top 0.3s;
+    width:100%;
+}
+#a:hover{
+   background-color:  #F9C3C5;
+}
+#b:hover{
+    background-color:  #98C4DC;
+ }
+ #c:hover{
+    background-color:  #F1EADA;
+ }
+ #d:hover{
+    background-color:  #C7ADD3;
+ }
+ #e:hover{
+    background-color:  #F9F4D9;
+ }
+#navbar{
+    float:right;
+    font-weight:1000;
+    margin-top:0px;
+    
+
+   
+}
+#covid{
+    color:#c089da;
+}
+#vivid{
+    color:#ff7075;
+}
+#steps{
+    color:rgb(164, 213, 255);
+}
+#navbar li{
+    display:inline;
+    padding:20px;
+}
+.know-more{
+   
+        height: auto;
+        width: 16%;
+        
+        border-color:#fff;
+        border-radius: 80px;
+        
+        font-size: 12px;
+        
+}      
+.faqsans{
+    font-weight:600;
+} 
+    
+
+.know-more a{
+    font-family: 'Montserrat', sans-serif ;
+}
+#vdo{
+    margin-left:28%;
+    box-shadow: 2px 2px 2px 2px #fdafb2;
+    height:315;
+    width:560;
+}
+
+.title {
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 3px;
+    word-spacing:4px;
+    text-align: right;
+    font-weight:100;
+    
+}
+table{
+    border:2px solid rgb(195, 227, 255) ;
+}
+
+.tip-box{
+    width: 60%;
+    display: inline-block;
+    border-radius: 100px;
+    margin: auto;
+    margin-top:10px;
+    margin-left:18%;
+    font-size: 16px;
+    text-align: center;
+    background: rgb(247, 247, 247);
+    
+}
+#symptoms{
+    margin-top:20px;
+   
+}
+table td{
+    padding:50px;
+    font-weight: 650;
+}
+
+
+
+
+
+#symptoms table{
+    margin-left:25%;
+    margin-top:10px;
+    
+   
+}
+
+
+
+#symptoms th{
+    margin:10px;
+    padding:24px;
+}
+h2{
+    padding:5px;
+}
+
+#tips img{
+    
+    border-radius: 100px;
+    float: left;
+    width: 17%;
+    height: 20%;
+    display: block;
+    padding: 5px;
+    margin: 10px;
+    background: linear-gradient(to top, #F9F4D9, #d2b8df, #fdd3d5);
+}
+.fa {
+    margin-right:10px;
+    font-size: 16px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(59, 59, 59);
+    border-radius: 50%;
+  }
+#quote{
+    
+    padding-top:5px;
+    margin-left:25px;
+    padding-left:-10px;
+    line-height: 2;
+    font-size: 36px;
+    font-style: italic;
+    
+    margin-top: 20px;
+    
+    margin-bottom: 20px;
+}
+#FAQS{
+    width:100%;
+    height:auto;
+    display:inline-block;
+    
+    margin-bottom:10px;
+}
+.faqs{
+    width:25%;
+    height:40%;
+    
+    display:inline-block;
+    margin-left :2.5%;
+    margin-right:2.5%;
+    border-radius:10px;
+    padding:10px
+}
+#footer{
+    padding:40px;
+    background:rgb(247, 247, 247);
+    width:100%;
+    margin-bottom:-5px;
+    margin-top:30px;
+}
+#name{
+    font-weight:600;
+}
+
